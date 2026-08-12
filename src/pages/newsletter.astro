@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+---
+<BaseLayout title="Newsletter" description="Subscribe to StackPick Lab for practical AI tool comparisons.">
+  <h1 class="text-3xl font-bold text-slate-900">Newsletter</h1>
+  <p class="mt-2 max-w-2xl text-slate-600">
+    Occasional emails when we publish a comparison or stack recommendation. No daily drip. No “10x your content” spam.
+  </p>
+  <div class="mt-8 max-w-xl">
+    <EmailCapture title="Join the list" subtitle="Placeholder form — connect your email provider before launch." />
+  </div>
+</BaseLayout>

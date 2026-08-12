@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+import ComparisonCard from '../components/ComparisonCard.astro';
+import { comparisons } from '../data/comparisons';
+---
+<BaseLayout title="StackPick Lab — Honest AI writing & SEO tool picks" moneyPage>
+  <AffiliateDisclosure />
+
+  <section class="mt-8 grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-600">Practical picks, clear tradeoffs</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        Pick the right AI writing &amp; SEO stack—without the hype.
+      </h1>
+      <p class="mt-4 text-lg text-slate-600">
+        StackPick Lab compares tools like Jasper, Copy.ai, Surfer, and Semrush the way operators actually buy them:
+        who they’re for, who should skip them, and when one subscription is enough.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/start-here" class="btn-primary">Start here</a>
+        <a href="/tools" class="btn-secondary">Browse tools</a>
+      </div>
+    </div>
+    <EmailCapture />
+  </section>
+
+  <section class="mt-14">
+    <div class="mb-4 flex items-end justify-between gap-4">
+      <h2 class="text-2xl font-bold text-slate-900">Top comparisons</h2>
+      <a href="/blog" class="text-sm font-medium">Read the research →</a>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        comparisons.map((c) => (
+          <ComparisonCard
+            href={`/compare/${c.slug}`}
+            title={c.title}
+            subtitle={c.subtitle}
+            updated={c.updated}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mt-14 grid gap-4 sm:grid-cols-3">
+    <div class="card">
+      <h3 class="font-semibold text-slate-900">Research-based</h3>
+      <p class="mt-1 text-sm text-slate-600">Feature, pricing, and workflow tradeoffs—not fake “I used it for 6 months” stories.</p>
+    </div>
+    <div class="card">
+      <h3 class="font-semibold text-slate-900">Best for / Skip if</h3>
+      <p class="mt-1 text-sm text-slate-600">Every comparison calls out who should buy—and who should walk away.</p>
+    </div>
+    <div class="card">
+      <h3 class="font-semibold text-slate-900">Affiliate-transparent</h3>
+      <p class="mt-1 text-sm text-slate-600">We disclose commissions clearly. Links never decide the recommendation.</p>
+    </div>
+  </section>
+</BaseLayout>

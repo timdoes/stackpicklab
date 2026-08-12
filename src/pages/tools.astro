@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+import { affiliates } from '../data/affiliates';
+
+const tools = Object.values(affiliates).map((a) => ({
+  name: a.name,
+  href: a.url,
+  blurb:
+    a.key === 'jasper'
+      ? 'AI marketing writer with brand voice and campaign workflows.'
+      : a.key === 'copyai'
+        ? 'GTM content workflows and automation-oriented writing.'
+        : a.key === 'writesonic'
+          ? 'AI writer with SEO article features for frequent publishers.'
+          : a.key === 'surfer'
+            ? 'On-page content optimization and SERP-informed scoring.'
+            : a.key === 'semrush'
+              ? 'Full SEO suite: research, audits, and content assists.'
+              : 'Content briefs and optimization for lean SEO teams.',
+}));
+---
+<BaseLayout
+  title="Tools directory"
+  description="Directory stub of AI writing and SEO tools covered by StackPick Lab."
+  moneyPage
+>
+  <AffiliateDisclosure />
+  <h1 class="mt-6 text-3xl font-bold text-slate-900">Tools directory</h1>
+  <p class="mt-2 max-w-2xl text-slate-600">
+    Stub directory for launch. Each card links to the vendor (affiliate placeholder URL until you swap real IDs).
+    Detailed takes live under <a href="/blog">Blog</a> and <a href="/compare/jasper-vs-copyai-vs-writesonic">Compare</a>.
+  </p>
+  <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      tools.map((t) => (
+        <li class="card flex flex-col">
+          <h2 class="text-lg font-semibold text-slate-900">{t.name}</h2>
+          <p class="mt-1 flex-1 text-sm text-slate-600">{t.blurb}</p>
+          <a href={t.href} class="btn-secondary mt-4 text-center" rel="nofollow sponsored noopener" target="_blank">
+            Visit {t.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
