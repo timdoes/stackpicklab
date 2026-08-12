@@ -1,16 +1,49 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+
+const guides = [
+  {
+    href: '/blog/copyai-workflows-b2b-outbound',
+    title: 'Copy.ai Workflows for B2B Outbound',
+    description: 'Research-based setup guide for GTM/outbound workflows—with human review guardrails.',
+  },
+  {
+    href: '/blog/best-ai-writing-tools-under-100',
+    title: 'AI Writing Tools Under $100/mo',
+    description: 'Budget-band picks for small marketing teams (verify live pricing).',
+  },
+  {
+    href: '/blog/best-ai-content-tools-for-agencies',
+    title: 'AI Content Tools for Agencies',
+    description: 'Multi-client stack patterns: research, writer QC, and brand production.',
+  },
+  {
+    href: '/start-here',
+    title: 'Start here',
+    description: 'Short path for choosing tools under budget pressure.',
+  },
+];
 ---
-<BaseLayout title="Guides" description="How-to guides for picking and stacking AI writing and SEO tools.">
-  <h1 class="text-3xl font-bold text-slate-900">Guides</h1>
+<BaseLayout title="Guides" description="How-to guides for picking and stacking AI writing and SEO tools." moneyPage>
+  <AffiliateDisclosure compact />
+  <h1 class="mt-6 text-3xl font-bold text-slate-900">Guides</h1>
   <p class="mt-2 max-w-2xl text-slate-600">
-    Stub page. Upcoming guides will cover stack design (writer + optimizer + research), budget tiers, and
-    “when one tool is enough.”
+    Practical setup and stack guides. Comparisons with Best for / Skip if live on the
+    <a href="/blog">blog</a> and <a href="/compare/jasper-vs-copyai-vs-writesonic">compare</a> pages.
   </p>
-  <div class="card mt-8">
-    <p class="text-sm text-slate-600">
-      For now, start with <a href="/start-here">Start here</a> and the seeded comparisons on the
-      <a href="/blog">blog</a>.
-    </p>
-  </div>
+  <ul class="mt-8 space-y-4">
+    {
+      guides.map((g) => (
+        <li class="card">
+          <h2 class="text-xl font-semibold">
+            <a href={g.href} class="text-slate-900 no-underline hover:text-brand-600">
+              {g.title}
+            </a>
+          </h2>
+          <p class="mt-1 text-sm text-slate-600">{g.description}</p>
+        </li>
+      ))
+    }
+  </ul>
 </BaseLayout>
