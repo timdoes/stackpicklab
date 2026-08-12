@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import { affiliates } from '../../data/affiliates';
+---
+<BaseLayout
+  title="How to Build an AI Content Ops Stack (Research → Draft → Optimize)"
+  description="Research-based playbook for stacking SEO research, AI drafting, and content optimization—with solo vs team cost bands as of August 2026."
+  moneyPage
+>
+  <AffiliateDisclosure />
+  <article class="prose-spl mt-6 max-w-3xl">
+    <p class="text-sm text-slate-400">August 12, 2026 · Guide / playbook</p>
+    <h1 class="!mt-2 text-3xl font-bold text-slate-900">How to Build an AI Content Ops Stack (Research → Draft → Optimize)</h1>
+    <p>
+      Most teams overbuy AI writing seats and underbuy process. A durable content ops stack separates three jobs—
+      <strong>research</strong>, <strong>draft</strong>, and <strong>optimize</strong>—then funds only the stages that
+      are weekly bottlenecks. This playbook is research-based positioning and cost-band guidance as of August 2026,
+      not a fabricated “we ran this agency for a year” story. Verify live pricing before you subscribe.
+      AI-assisted drafting helped structure this article.
+    </p>
+
+    <h2>Why stacks fail</h2>
+    <p>
+      Failure mode one: five chat UIs, zero keyword process. Failure mode two: a full Semrush seat used only to check
+      one volume number monthly. Failure mode three: Surfer or Frase bought before anyone owns a briefing workflow.
+      Name the stage that blocks publish cadence, then buy for that stage.
+    </p>
+
+    <h2>The three-stage pipeline</h2>
+    <ol>
+      <li>
+        <strong>Research:</strong> topics, keywords, competitors, questions to answer. Typical tools: Semrush-class
+        suites, Ahrefs (official site; no affiliate on StackPick Lab), or a free kit (Google Search Console, Keyword
+        Planner, limited AlsoAsked / AnswerThePublic / Keyword Everywhere quotas).
+      </li>
+      <li>
+        <strong>Draft:</strong> outlines and first drafts. Typical tools: ChatGPT/Claude you may already pay for;
+        <a href={affiliates.jasper.url} rel="nofollow sponsored noopener" target="_blank">Jasper</a> for brand/campaigns;
+        <a href={affiliates.copyai.url} rel="nofollow sponsored noopener" target="_blank">Copy.ai</a> for GTM workflows;
+        <a href={affiliates.writesonic.url} rel="nofollow sponsored noopener" target="_blank">Writesonic</a> when generation
+        and light SEO sit together.
+      </li>
+      <li>
+        <strong>Optimize:</strong> SERP coverage, briefs, on-page scores before publish. Typical tools:
+        <a href={affiliates.frase.url} rel="nofollow sponsored noopener" target="_blank">Frase</a> or
+        <a href={affiliates.surfer.url} rel="nofollow sponsored noopener" target="_blank">Surfer SEO</a>;
+        Semrush content assists only if the suite is already justified.
+      </li>
+    </ol>
+
+    <h2>Stage deep-dives</h2>
+    <h3>Research</h3>
+    <p>
+      Buy research software when you repeatedly ask “what should we publish next?” and free quotas fail. Semrush entry
+      packaging often sits near ~$139.95/mo or ~$117/mo annual as of August 2026. Ahrefs Starter ~$29 is limited; Lite
+      ~$129 is the practical floor for many solos. Free stacks are enough for early blogs—see
+      <a href="/blog/best-seo-tools-solo-bloggers-semrush-ahrefs-free">Semrush vs Ahrefs vs free for solo bloggers</a>
+      and the cards at
+      <a href="/compare/semrush-vs-ahrefs-vs-free">semrush-vs-ahrefs-vs-free</a>.
+      Pairing research with Surfer too early is a common budget leak; read
+      <a href="/blog/semrush-vs-surfer-seo">Semrush vs Surfer</a> before stacking both.
+    </p>
+    <h3>Draft</h3>
+    <p>
+      Do not default to a second writer seat. ChatGPT Plus ~$20/mo or Claude Pro ~$20/mo (~$17 annual) covers a large
+      share of drafting. Add Jasper (~$69/$59 Pro seat bands) for brand governance, Copy.ai (free + Chat from ~$29)
+      for workflows, or Writesonic (Starter ~$79–$99; higher ~$199–$399+) for draft+SEO consolidation. Stay-vs-switch
+      detail:
+      <a href="/blog/jasper-alternatives-chatgpt-claude">Jasper alternatives if you already use ChatGPT / Claude</a>.
+      Side-by-side writer cards:
+      <a href="/compare/jasper-vs-copyai-vs-writesonic">Jasper vs Copy.ai vs Writesonic</a>.
+    </p>
+    <h3>Optimize</h3>
+    <p>
+      Frase Starter commonly lands ~$39–$49; Surfer Standard/Pro often sits in a ~$99–$129 band depending on packaging—
+      verify document meters live. Pick Frase when briefs/coverage are the bottleneck; Surfer when score-depth editing
+      is. Head-to-heads:
+      <a href="/blog/frase-vs-surfer-2026">Frase vs Surfer</a>,
+      <a href="/compare/frase-vs-surfer">compare cards</a>,
+      <a href="/blog/best-surfer-seo-alternatives-budget">Surfer alternatives on a budget</a>,
+      <a href="/compare/surfer-seo-alternatives">Surfer alternatives cards</a>.
+    </p>
+
+    <h2>Solo vs team cost bands (August 2026, approx USD)</h2>
+    <ul>
+      <li>
+        <strong>Lean solo (~$20–$70/mo):</strong> ChatGPT or Claude + free research (GSC/Planner). Optional: Rytr-class
+        overflow or a cheap Frase-class optimizer later—not all at once.
+      </li>
+      <li>
+        <strong>SEO-serious solo (~$120–$150/mo):</strong> one research suite floor (Semrush or Ahrefs Lite-class) <em>or</em>
+        a strong optimizer (Surfer/Frase) plus chat drafting—rarely both suite and Surfer on day one.
+      </li>
+      <li>
+        <strong>Small team (~$250–$500+/mo):</strong> research suite + shared optimizer + one governed writer/workflow
+        seat (Jasper or Copy.ai) when those jobs are real service lines. Agency patterns:
+        <a href="/compare/ai-content-tools-for-agencies">AI content tools for agencies</a>.
+      </li>
+    </ul>
+    <p>
+      These bands are planning heuristics, not quotes. Seat counts, document meters, and annual discounts move the math
+      quickly—re-check vendor pages as of purchase date.
+    </p>
+
+    <h2>One tool vs full stack</h2>
+    <p>
+      <strong>Best for one tool:</strong> clear single bottleneck (only research, only drafting, or only on-page scores);
+      low publish volume; one operator owning the whole calendar. <strong>Best for a staged stack:</strong> distinct people
+      (or distinct weekly rituals) for research, drafting, and QC. <strong>Skip a full stack if:</strong> publish cadence
+      is low, nobody will live in the tools weekly, or you are stacking overlapping chat UIs “just in case.” Prefer one
+      good seat per stage; add the next stage only after a measurable throughput gap appears.
+    </p>
+
+    <h2>Recommended starter paths</h2>
+    <ol>
+      <li>New blog → free research + ChatGPT/Claude; no Surfer/Semrush yet.</li>
+      <li>SEO-serious solo → pick <em>either</em> research suite <em>or</em> Frase/Surfer; keep chat for drafts.</li>
+      <li>Brand/campaign team → Jasper (or Copy.ai for GTM) + one optimizer; research suite when reporting is billed.</li>
+      <li>Budget writer consolidation → Writesonic before Jasper + Surfer dual seats; see
+        <a href="/blog/best-ai-writing-tools-under-100">under-$100 AI writing picks</a> and
+        <a href="/compare/ai-writing-tools-under-100">under-$100 compare cards</a>.</li>
+    </ol>
+    <p>
+      Practical navigation:
+      <a href="/start-here">Start here</a> ·
+      <a href="/compare/semrush-vs-surfer-seo">Semrush vs Surfer</a> ·
+      <a href="/compare/surfer-seo-alternatives">Surfer alternatives</a> ·
+      <a href="/compare/jasper-alternatives-chatgpt-claude">ChatGPT/Claude vs Jasper-class seats</a> ·
+      <a href="/guides">All guides</a>.
+    </p>
+  </article>
+</BaseLayout>
