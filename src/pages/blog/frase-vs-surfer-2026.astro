@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import { affiliates } from '../../data/affiliates';
+---
+<BaseLayout
+  title="Frase vs Surfer: Which Content Optimizer Wins for SEO in 2026?"
+  description="Research-based comparison of Frase and Surfer SEO for content optimization teams in 2026."
+  moneyPage
+>
+  <AffiliateDisclosure />
+  <article class="prose-spl mt-6 max-w-3xl">
+    <p class="text-sm text-slate-400">August 5, 2026 · Research comparison</p>
+    <h1 class="!mt-2 text-3xl font-bold text-slate-900">Frase vs Surfer: Which Content Optimizer Wins for SEO in 2026?</h1>
+    <p>
+      <a href={affiliates.frase.url} rel="nofollow sponsored noopener" target="_blank">Frase</a>
+      and
+      <a href={affiliates.surfer.url} rel="nofollow sponsored noopener" target="_blank">Surfer SEO</a>
+      both help writers turn SERP patterns into better drafts. In 2026 the useful question is not “which is smarter,”
+      but which job you hire: fast research-to-brief production, or deeper on-page optimization scoring. This is a
+      research-based comparison of positioning and tradeoffs—not a fabricated multi-month diary. Pricing notes are
+      as of August 2026; verify live plans before you buy. AI-assisted drafting helped structure this article.
+    </p>
+
+    <h2>Different strengths</h2>
+    <ul>
+      <li>
+        <strong>Frase:</strong> research → brief → outline → draft loop; often chosen when briefing speed and topic
+        coverage matter most. Newer positioning also emphasizes AI-answer / GEO-style visibility tracking—useful if
+        “cited in AI answers” is an explicit goal, weaker if you only care about classic blue-link rankings.
+      </li>
+      <li>
+        <strong>Surfer:</strong> optimization-first content editor with granular SERP/NLP-style guidance and a live
+        content score writers can chase while drafting. Stronger when competitive on-page depth is the bottleneck.
+      </li>
+    </ul>
+
+    <h2>Pricing reality check (August 2026)</h2>
+    <p>
+      Public third-party roundups disagree on exact tier names and list prices because both vendors reprice and rebundle
+      often. Treat entry cost as “same rough neighborhood for a solo optimizer seat,” with higher tiers diverging on
+      document volume, seats, audits, and add-ons. Do not buy from a screenshot in a blog post—open each pricing page
+      and match limits to your monthly publish rate.
+    </p>
+
+    <h2>Frase — when briefs are the bottleneck</h2>
+    <p>
+      Pick Frase if your writers stall before drafting: weak outlines, missing subtopics, unclear questions to answer.
+      Frase’s value shows up in how quickly a keyword becomes a usable brief. If you already have excellent briefs from
+      elsewhere, Frase’s edge shrinks.
+    </p>
+    <p>
+      <strong>Best for:</strong> SEO content ops that live in briefs and SERP research.
+      <strong>Skip if:</strong> you mainly need a score-heavy editor for already-briefed drafts, or you expect Surfer-like
+      audit depth as the primary feature.
+    </p>
+
+    <h2>Surfer — when optimization depth is the bottleneck</h2>
+    <p>
+      Pick Surfer when drafts “feel done” but underperform because they miss competitor terms, structure, or on-page
+      patterns. Surfer is built for that editor loop. It is less compelling if nobody on the team will sit in the content
+      editor weekly—shelfware is expensive at any price.
+    </p>
+    <p>
+      <strong>Best for:</strong> writers optimizing long-form posts against competitive SERPs.
+      <strong>Skip if:</strong> you only need occasional outlines, or a full research suite (keywords, audits, tracking)
+      is the real missing piece—look at Semrush-class tools instead.
+    </p>
+
+    <h2>Do you need both?</h2>
+    <p>
+      Almost never on day one. Choose the bottleneck tool. Some larger teams keep Frase-like briefing for freelancers and
+      Surfer for final optimization; that stack should wait until a single tool’s limits show up in throughput—not because
+      a comparison chart listed every feature checkbox.
+    </p>
+
+    <h2>Practical pick</h2>
+    <ol>
+      <li>Keyword → brief → draft speed (and AI-search visibility interest) → Frase.</li>
+      <li>Draft → score → ship against tough SERPs → Surfer.</li>
+      <li>Still unsure and budget-sensitive → start with Frase; upgrade to Surfer only if score depth becomes the weekly pain.</li>
+    </ol>
+    <p>
+      Card-level Best for / Skip if: <a href="/compare/frase-vs-surfer">Frase vs Surfer comparison</a>.
+      Related: <a href="/blog/best-surfer-seo-alternatives-budget">Surfer alternatives on a budget</a>.
+    </p>
+  </article>
+</BaseLayout>
