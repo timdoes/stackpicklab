@@ -1,0 +1,35 @@
+{
+  "_comment": "Copy to affiliate-links.json (gitignored) and replace placeholders with real affiliate URLs. Pages read from src/data/affiliates.ts which falls back to these example keys.",
+  "links": {
+    "copyai": {
+      "name": "Copy.ai",
+      "url": "https://EXAMPLE.com/copyai?ref=YOUR_ID",
+      "disclaimer": "Affiliate link — we may earn a commission at no extra cost to you."
+    },
+    "surfer": {
+      "name": "Surfer SEO",
+      "url": "https://EXAMPLE.com/surfer?ref=YOUR_ID",
+      "disclaimer": "Affiliate link — we may earn a commission at no extra cost to you."
+    },
+    "semrush": {
+      "name": "Semrush",
+      "url": "https://EXAMPLE.com/semrush?ref=YOUR_ID",
+      "disclaimer": "Affiliate link — we may earn a commission at no extra cost to you."
+    },
+    "jasper": {
+      "name": "Jasper",
+      "url": "https://EXAMPLE.com/jasper?ref=YOUR_ID",
+      "disclaimer": "Affiliate link — we may earn a commission at no extra cost to you."
+    },
+    "frase": {
+      "name": "Frase",
+      "url": "https://EXAMPLE.com/frase?ref=YOUR_ID",
+      "disclaimer": "Affiliate link — we may earn a commission at no extra cost to you."
+    },
+    "writesonic": {
+      "name": "Writesonic",
+      "url": "https://EXAMPLE.com/writesonic?ref=YOUR_ID",
+      "disclaimer": "Affiliate link — we may earn a commission at no extra cost to you."
+    }
+  }
+}
