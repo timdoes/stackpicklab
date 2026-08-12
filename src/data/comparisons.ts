@@ -136,7 +136,7 @@ export const comparisons: Comparison[] = [
       },
     ],
     verdict:
-      'If Surfer is too expensive, start with Frase for briefs/optimization or Writesonic if you also need generation. Only use Semrush content tools as the alternative when you already need Semrush for research—not as a cheaper Surfer clone.',
+      'If Surfer is too expensive, start with Frase for briefs/optimization or Writesonic if you also need generation. Only use Semrush content tools as the alternative when you already need Semrush for research—not as a cheaper Surfer clone. Also compare Frase vs Surfer and Semrush vs Surfer if you’re choosing the bottleneck tool.',
   },
   {
     slug: 'semrush-vs-surfer-seo',
@@ -178,7 +178,7 @@ export const comparisons: Comparison[] = [
       },
     ],
     verdict:
-      'Most blog teams do not need both on day one. Use Semrush (or similar) for research and strategy; add Surfer when writers spend real time optimizing drafts against SERPs. If budget forces a choice: research-first teams pick Semrush; write-optimize-first teams pick Surfer (or a cheaper content optimizer).',
+      'Most blog teams do not need both on day one. Use Semrush (or similar) for research and strategy; add Surfer when writers spend real time optimizing drafts against SERPs. If budget forces a choice: research-first teams pick Semrush; write-optimize-first teams pick Surfer (or a cheaper content optimizer). Solo bloggers weighing suites vs free tools should also read Semrush vs Ahrefs vs free.',
   },
   {
     slug: 'ai-writing-tools-under-100',
@@ -289,7 +289,7 @@ export const comparisons: Comparison[] = [
       },
     ],
     verdict:
-      'Choose Frase when briefing speed and coverage (and optionally AI-search visibility) are the bottleneck. Choose Surfer when drafts need deeper on-page optimization against competitive SERPs. Most teams should buy one first; add the second only after a clear weekly workflow gap appears.',
+      'Choose Frase when briefing speed and coverage (and optionally AI-search visibility) are the bottleneck. Choose Surfer when drafts need deeper on-page optimization against competitive SERPs. Most teams should buy one first; add the second only after a clear weekly workflow gap appears. Budget path: Surfer alternatives; research-suite path: Semrush vs Surfer.',
   },
   {
     slug: 'ai-content-tools-for-agencies',
@@ -369,6 +369,148 @@ export const comparisons: Comparison[] = [
     ],
     verdict:
       'Agencies should separate jobs: Semrush-class tools for research/reporting, Surfer or Frase for writer QC, Jasper (or Copy.ai) only when brand campaigns or GTM workflows are actual service lines. Prefer one standard per job over five overlapping AI seats.',
+  },
+  {
+    slug: 'jasper-alternatives-chatgpt-claude',
+    title: 'Jasper Alternatives If You Already Use ChatGPT / Claude',
+    subtitle: 'When a second AI writing seat still makes sense—and when ChatGPT or Claude alone is enough.',
+    updated: '2026-08-12',
+    relatedBlog: 'jasper-alternatives-chatgpt-claude',
+    tools: [
+      {
+        name: 'ChatGPT / Claude',
+        summary:
+          'General-purpose LLMs for research, drafting, rewriting, and projects. Strong default for solo operators who already prompt well—not specialized brand-voice libraries or Surfer-style content scores.',
+        pricingNote:
+          'As of August 2026, ChatGPT Plus is often ~$20/mo; Claude Pro ~$20/mo or ~$17/mo annual (Team/Max higher)—verify live on OpenAI and Anthropic pricing pages.',
+        bestFor: [
+          'Solo writers who draft well with prompts and projects',
+          'Operators who already pay for Plus/Pro and ship with human edit',
+          'Teams that do not need shared brand kits yet',
+        ],
+        skipIf: [
+          'You need shared Brand Voice and campaign workflows across seats',
+          'You want native on-page SEO scoring in the writer',
+          'Non-writers on the team need templated marketing workflows',
+        ],
+      },
+      {
+        name: 'Jasper',
+        affiliateKey: 'jasper',
+        summary:
+          'Marketing content ops: Brand Voice, Knowledge assets, Canvas/agents, and seat-based campaign workflows on top of generation.',
+        pricingNote:
+          'As of August 2026 checks, Jasper Pro is often ~$69/seat/mo monthly or ~$59/seat/mo annual; Business is custom; 7-day trial common. Older Creator ~$49 tiers may be retired—confirm live.',
+        bestFor: [
+          'Marketing teams needing shared brand controls',
+          'Campaign and multi-channel draft production',
+          'Pods that outgrew plain chat UIs',
+        ],
+        skipIf: [
+          'ChatGPT or Claude already covers your weekly drafts',
+          'Budget cannot justify a second seat-class tool',
+          'You mainly need SEO scoring, not brand ops',
+        ],
+      },
+      {
+        name: 'Copy.ai',
+        affiliateKey: 'copyai',
+        summary:
+          'Writing plus GTM/workflow automation—stronger when you chain research → draft → outreach than as an occasional chat box.',
+        pricingNote:
+          'As of August 2026, a free tier is often reported and Chat plans commonly start near ~$29/mo (annual lower); Scale/enterprise much higher—verify live.',
+        bestFor: [
+          'GTM teams automating repeatable copy steps',
+          'Outbound + marketing sharing one messaging system',
+        ],
+        skipIf: [
+          'You dislike configuring workflows',
+          'Deep on-page SEO scoring is the real job',
+          'Volume is too low to repay setup time',
+        ],
+      },
+      {
+        name: 'Writesonic',
+        affiliateKey: 'writesonic',
+        summary:
+          'Content generation with SEO/article and AI-search visibility positioning—less “cheap Jasper,” more draft + visibility suite at higher entry prices than classic writer tools.',
+        pricingNote:
+          'As of August 2026, Starter is often cited ~$79–$99/mo; higher tiers ~$199–$399+—verify live plan limits.',
+        bestFor: [
+          'Publishers who want content plus AI-visibility features',
+          'Teams consolidating writer + light SEO/visibility',
+        ],
+        skipIf: [
+          'You only wanted a cheaper Jasper brand seat',
+          'You already own a dedicated optimizer + chat LLM',
+          'Entry price exceeds a lean solo budget',
+        ],
+      },
+    ],
+    verdict:
+      'Stay on ChatGPT or Claude if prompts and human edit already ship your content. Add Jasper when shared Brand Voice and campaign workflows are the bottleneck. Prefer Copy.ai for GTM automation and Writesonic when AI-search visibility bundling matters more than a second brand seat. Verify all prices live (notes as of August 2026).',
+  },
+  {
+    slug: 'semrush-vs-ahrefs-vs-free',
+    title: 'Best SEO Tools for Solo Bloggers: Semrush vs Ahrefs vs Free',
+    subtitle: 'One-person blog stacks—paid suite, Ahrefs, or a free research kit.',
+    updated: '2026-08-12',
+    relatedBlog: 'best-seo-tools-solo-bloggers-semrush-ahrefs-free',
+    tools: [
+      {
+        name: 'Semrush',
+        affiliateKey: 'semrush',
+        summary:
+          'Broad SEO platform: keywords, competitors, site audits, tracking, plus content assists—one login for many solo-blog jobs.',
+        pricingNote:
+          'As of August 2026, Pro-class entry is often ~$139.95/mo or ~$117/mo annual—verify live tiers and limits.',
+        bestFor: [
+          'Solo bloggers who want keywords + audits + competitors together',
+          'Operators who will use the suite weekly, not monthly',
+          'Sites that need recurring competitive snapshots',
+        ],
+        skipIf: [
+          'You only optimize a few posts per month',
+          'A free GSC-led stack still answers your questions',
+          'You only need a content score editor (consider Surfer/Frase instead)',
+        ],
+      },
+      {
+        name: 'Ahrefs',
+        summary:
+          'SEO suite with a strong reputation for backlink and competitor research. Practical paid use for serious solo work usually means looking past the most limited entry tier.',
+        pricingNote:
+          'As of August 2026, Starter is often ~$29/mo (limited); Lite ~$129/mo is a common “real work” floor—confirm live. Ahrefs has no public affiliate program; we discuss it educationally only.',
+        bestFor: [
+          'Solo SEOs focused on backlinks and competitor gaps',
+          'Operators who will budget for Lite-class access',
+        ],
+        skipIf: [
+          'Starter limits block the reports you need and Lite is out of budget',
+          'You mainly need on-page content scoring',
+          'You want the broadest all-in-one marketing toolkit first',
+        ],
+      },
+      {
+        name: 'Free stack (GSC + Keyword Planner + freemium)',
+        summary:
+          'Google Search Console, Google Keyword Planner (ads account), plus limited free tiers of tools like AlsoAsked, AnswerThePublic, and Keywords Everywhere—enough to find queries, watch coverage, and prioritize.',
+        pricingNote:
+          'Mostly free; freemium tools meter searches/credits. Weaker than paid suites on deep backlink competitive intel.',
+        bestFor: [
+          'Brand-new solo blogs validating topics',
+          'Writers who will actually use GSC weekly',
+          'Budgets that cannot justify ~$100+/mo research seats',
+        ],
+        skipIf: [
+          'You compete in niches where backlink intel is weekly work',
+          'You need scalable keyword databases and site audits',
+          'Free search caps constantly interrupt your research',
+        ],
+      },
+    ],
+    verdict:
+      'Start with a free GSC-led stack while you validate topics. Choose Semrush when you want one broad suite; choose Ahrefs when backlink/competitor depth is the bottleneck and you can budget past Starter limits. Most solo bloggers should not buy both paid suites on day one. Pair research tools with a content optimizer only after drafts are the weekly pain—see Semrush vs Surfer and Frase vs Surfer. Verify prices live (August 2026 notes).',
   },
 ];
 
