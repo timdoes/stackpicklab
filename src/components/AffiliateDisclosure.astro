@@ -1,0 +1,20 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+<aside
+  class:list={[
+    'rounded-lg border border-amber-200 bg-amber-50 text-amber-950',
+    compact ? 'px-3 py-2 text-xs' : 'px-4 py-3 text-sm',
+  ]}
+  role="note"
+  aria-label="Affiliate disclosure"
+>
+  <p>
+    <strong>Disclosure:</strong> StackPick Lab may earn a commission if you buy through links on this page,
+    at no extra cost to you. Recommendations are research-based and not paid placements.
+    See our <a href="/disclosure" class="font-medium underline underline-offset-2">full disclosure</a>.
+  </p>
+</aside>

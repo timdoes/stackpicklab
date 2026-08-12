@@ -1,0 +1,22 @@
+---
+interface Props {
+  bestFor: string[];
+  skipIf: string[];
+  toolName: string;
+}
+const { bestFor, skipIf, toolName } = Astro.props;
+---
+<div class="grid gap-4 sm:grid-cols-2">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
+    <h4 class="text-sm font-bold text-emerald-900">Best for — {toolName}</h4>
+    <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-emerald-950">
+      {bestFor.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50 p-4">
+    <h4 class="text-sm font-bold text-rose-900">Skip if — {toolName}</h4>
+    <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-rose-950">
+      {skipIf.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+</div>
