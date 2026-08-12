@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import BestForSkip from '../../components/BestForSkip.astro';
+import { comparisons, getComparison } from '../../data/comparisons';
+import { affiliates, type AffiliateKey } from '../../data/affiliates';
+
+export function getStaticPaths() {
+  return comparisons.map((c) => ({ params: { slug: c.slug } }));
+}
+
+const { slug } = Astro.params;
+const comparison = getComparison(slug!);
+if (!comparison) {
+  throw new Error(`Unknown comparison: ${slug}`);
+}
+---
+<BaseLayout title={comparison.title} description={comparison.subtitle} moneyPage>
+  <AffiliateDisclosure />
+
+  <p class="mt-6 text-sm font-medium text-brand-600">Comparison</p>
+  <h1 class="mt-1 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{comparison.title}</h1>
+  <p class="mt-2 text-lg text-slate-600">{comparison.subtitle}</p>
+  <p class="mt-1 text-xs text-slate-400">Updated {comparison.updated}</p>
+
+  <div class="mt-10 space-y-10">
+    {
+      comparison.tools.map((tool) => {
+        const aff =
+          tool.affiliateKey && tool.affiliateKey in affiliates
+            ? affiliates[tool.affiliateKey as AffiliateKey]
+            : null;
+        return (
+          <section class="card">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <h2 class="text-2xl font-bold text-slate-900">{tool.name}</h2>
+              {aff && (
+                <a
+                  href={aff.url}
+                  class="btn-primary"
+                  rel="nofollow sponsored noopener"
+                  target="_blank"
+                >
+                  Check {aff.name} pricing
+                </a>
+              )}
+            </div>
+            <p class="mt-3 text-slate-700">{tool.summary}</p>
+            <p class="mt-2 text-sm text-slate-500">
+              <strong class="text-slate-700">Pricing note:</strong> {tool.pricingNote}
+            </p>
+            <div class="mt-5">
+              <BestForSkip toolName={tool.name} bestFor={tool.bestFor} skipIf={tool.skipIf} />
+            </div>
+          </section>
+        );
+      })
+    }
+  </div>
+
+  <section class="card mt-10 border-brand-200 bg-brand-50">
+    <h2 class="text-xl font-bold text-slate-900">Verdict</h2>
+    <p class="mt-2 text-slate-700">{comparison.verdict}</p>
+    {
+      comparison.relatedBlog && (
+        <p class="mt-4 text-sm">
+          <a href={`/blog/${comparison.relatedBlog}`}>Read the full research article →</a>
+        </p>
+      )
+    }
+  </section>
+</BaseLayout>

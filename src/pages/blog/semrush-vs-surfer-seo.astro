@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import { affiliates } from '../../data/affiliates';
+---
+<BaseLayout
+  title="Semrush vs Surfer SEO: Do You Need Both for Blog Content?"
+  description="Research comparison of Semrush and Surfer SEO for blog content teams."
+  moneyPage
+>
+  <AffiliateDisclosure />
+  <article class="prose-spl mt-6 max-w-3xl">
+    <p class="text-sm text-slate-400">August 3, 2026 · Research comparison</p>
+    <h1 class="!mt-2 text-3xl font-bold text-slate-900">Semrush vs Surfer SEO: Do You Need Both for Blog Content?</h1>
+    <p>
+      Blog teams often ask whether they need
+      <a href={affiliates.semrush.url} rel="nofollow sponsored noopener" target="_blank">Semrush</a>
+      and
+      <a href={affiliates.surfer.url} rel="nofollow sponsored noopener" target="_blank">Surfer SEO</a>
+      at the same time. Short answer: usually not on day one. They solve overlapping but different jobs.
+    </p>
+
+    <h2>Different jobs</h2>
+    <ul>
+      <li><strong>Semrush:</strong> keyword research, competitors, site audits, tracking—plus some writing assistance.</li>
+      <li><strong>Surfer:</strong> in-document content optimization and SERP-informed scoring for writers.</li>
+    </ul>
+
+    <h2>When one is enough</h2>
+    <p>
+      If your pain is “what should we write and where are the gaps?”, prioritize a research suite (Semrush or similar).
+      If your pain is “our drafts miss topics competitors cover,” prioritize a content optimizer (Surfer, Frase, etc.).
+    </p>
+
+    <h2>When both can make sense</h2>
+    <p>
+      Larger content ops sometimes keep Semrush for strategy and Surfer in the writer’s editor. That stack is rational
+      only after a single tool’s limits show up in weekly throughput—not because a Twitter thread said “pros use both.”
+    </p>
+
+    <h2>Budget rule of thumb</h2>
+    <p>
+      Solopreneurs: pick the bottleneck tool. Agencies: Semrush (or equivalent) first; add Surfer when multiple writers
+      need consistent on-page guidance.
+    </p>
+    <p>
+      See <a href="/compare/semrush-vs-surfer-seo">Semrush vs Surfer comparison cards</a> for Best for / Skip if detail.
+    </p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+
+const posts = [
+  {
+    slug: 'jasper-vs-copyai-vs-writesonic-2026',
+    title: 'Jasper vs Copy.ai vs Writesonic (2026)',
+    description: 'A research-based comparison of three popular AI writing platforms for lean teams.',
+    date: '2026-08-01',
+  },
+  {
+    slug: 'best-surfer-seo-alternatives-budget',
+    title: 'Best Surfer SEO Alternatives for Content Teams on a Budget',
+    description: 'Cheaper paths to content optimization when Surfer is more than you need.',
+    date: '2026-08-02',
+  },
+  {
+    slug: 'semrush-vs-surfer-seo',
+    title: 'Semrush vs Surfer SEO: Do You Need Both for Blog Content?',
+    description: 'When a full SEO suite and a content optimizer overlap—and when they don’t.',
+    date: '2026-08-03',
+  },
+];
+---
+<BaseLayout title="Blog" description="Research-based AI writing and SEO tool comparisons." moneyPage>
+  <AffiliateDisclosure compact />
+  <h1 class="mt-6 text-3xl font-bold text-slate-900">Blog</h1>
+  <p class="mt-2 text-slate-600">Research-based comparisons. Not fabricated long-term trial stories.</p>
+  <ul class="mt-8 space-y-4">
+    {
+      posts.map((p) => (
+        <li class="card">
+          <p class="text-xs text-slate-400">{p.date}</p>
+          <h2 class="mt-1 text-xl font-semibold">
+            <a href={`/blog/${p.slug}`} class="text-slate-900 no-underline hover:text-brand-600">
+              {p.title}
+            </a>
+          </h2>
+          <p class="mt-1 text-sm text-slate-600">{p.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
