@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import { affiliates } from '../../data/affiliates';
+---
+<BaseLayout
+  title="Copy.ai Workflows for B2B Outbound (Honest Research-Based Setup Guide)"
+  description="A research and docs-based setup guide for using Copy.ai workflows in B2B outbound—not a fabricated long-term trial."
+  moneyPage
+>
+  <AffiliateDisclosure />
+  <article class="prose-spl mt-6 max-w-3xl">
+    <p class="text-sm text-slate-400">August 6, 2026 · Research setup guide</p>
+    <h1 class="!mt-2 text-3xl font-bold text-slate-900">Copy.ai Workflows for B2B Outbound (Honest Research-Based Setup Guide)</h1>
+    <p>
+      This is a <strong>research- and documentation-based setup guide</strong> for using
+      <a href={affiliates.copyai.url} rel="nofollow sponsored noopener" target="_blank">Copy.ai</a>
+      workflows in B2B outbound—not a “we ran 10,000 emails for six months” story. Copy.ai publicly positions around
+      GTM workflows and automating repeatable writing steps. Whether that pays off depends on process discipline more
+      than model cleverness. Note: Copy.ai’s affiliate program has been unavailable/broken at times; we still cover the
+      product editorially. Pricing referenced as of August 2026—verify live. AI-assisted drafting helped organize this guide.
+    </p>
+
+    <h2>Who this setup is for</h2>
+    <p>
+      <strong>Best for:</strong> B2B teams that already have ICP definitions, offer clarity, and a CRM/sequencer—and want
+      faster first drafts of personalization blocks, follow-ups, and landing/one-pager copy tied to the same messaging.
+    </p>
+    <p>
+      <strong>Skip if:</strong> you have no list strategy, no human review step, or you expect a workflow builder to invent
+      product-market fit. Automation amplifies a weak offer just as efficiently as a strong one.
+    </p>
+
+    <h2>What to build (workflow shape)</h2>
+    <p>Documented Copy.ai-style GTM setups usually succeed when they look like a short assembly line, not a magic button:</p>
+    <ol>
+      <li><strong>Inputs:</strong> ICP segment, persona, pain, proof point, CTA, and (when available) account research notes.</li>
+      <li><strong>Draft steps:</strong> hook → value narrative → soft CTA; separate steps beat one giant “write email” prompt.</li>
+      <li><strong>Variants:</strong> generate 2–3 angles (problem-led, proof-led, trigger-led) for A/B testing in your sequencer.</li>
+      <li><strong>Human gate:</strong> a marketer or AE edits facts, tone, and compliance before anything sends.</li>
+      <li><strong>Reuse:</strong> promote winning snippets into a shared messaging library for ads, site, and sales one-pagers.</li>
+    </ol>
+
+    <h2>Recommended guardrails</h2>
+    <ul>
+      <li>Never auto-send. Workflows draft; humans approve—especially for regulated or enterprise buyers.</li>
+      <li>Ban fabricated metrics, fake case studies, and “I noticed you…” lines that are not based on real research.</li>
+      <li>Keep personalization fields explicit (company, role, trigger) so the model cannot invent them.</li>
+      <li>Measure reply quality and meeting rate, not words generated per month.</li>
+    </ul>
+
+    <h2>Stack around Copy.ai</h2>
+    <p>
+      Outbound content is rarely a single-tool job. A sane lean stack:
+    </p>
+    <ul>
+      <li><strong>Copy.ai (or similar)</strong> for repeatable draft workflows</li>
+      <li><strong>Your CRM + sequencer</strong> for sending and logging</li>
+      <li><strong>Optional SEO/content tool</strong> only if outbound also feeds a blog/resource engine—
+        see <a href="/compare/jasper-vs-copyai-vs-writesonic">Jasper vs Copy.ai vs Writesonic</a>
+      </li>
+    </ul>
+    <p>
+      If your real gap is keyword research or on-page blog scoring, Copy.ai will not replace
+      <a href={affiliates.semrush.url} rel="nofollow sponsored noopener" target="_blank">Semrush</a>
+      or
+      <a href={affiliates.surfer.url} rel="nofollow sponsored noopener" target="_blank">Surfer</a>.
+      Buy the tool that matches the bottleneck.
+    </p>
+
+    <h2>Setup checklist (first week)</h2>
+    <ol>
+      <li>Write a one-page messaging doc: ICP, pains, proof, objections, CTAs.</li>
+      <li>Build one workflow for cold email variants; freeze scope—do not automate five channels on day one.</li>
+      <li>Run 20–50 drafts through human edit; log what the model consistently gets wrong.</li>
+      <li>Tighten prompts/inputs; only then expand to follow-ups or LinkedIn note drafts.</li>
+      <li>Review reply and meeting metrics after a meaningful send volume—not after the first afternoon.</li>
+    </ol>
+
+    <h2>Honest bottom line</h2>
+    <p>
+      Copy.ai workflows are worth evaluating for B2B outbound when you already know what good messaging sounds like and
+      need speed on variations. They are a poor buy if you are hoping software will discover your positioning. Start narrow,
+      keep a human in the loop, and skip the tool if a shared doc + ChatGPT-style assistant already covers your volume.
+    </p>
+  </article>
+</BaseLayout>
