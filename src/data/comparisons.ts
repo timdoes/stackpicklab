@@ -82,9 +82,9 @@ export const comparisons: Comparison[] = [
   },
   {
     slug: 'surfer-seo-alternatives',
-    title: 'Best Surfer SEO Alternatives (Budget)',
-    subtitle: 'Content-optimization options when Surfer price does not fit.',
-    updated: '2026-08-01',
+    title: 'Surfer SEO Alternatives (Budget)',
+    subtitle: 'Frase, Writesonic, or Semrush content tools when Surfer is too expensive.',
+    updated: '2026-08-12',
     relatedBlog: 'best-surfer-seo-alternatives-budget',
     tools: [
       {
@@ -141,8 +141,8 @@ export const comparisons: Comparison[] = [
   {
     slug: 'semrush-vs-surfer-seo',
     title: 'Semrush vs Surfer SEO',
-    subtitle: 'Do blog teams need both, or is one enough?',
-    updated: '2026-08-01',
+    subtitle: 'Research suite vs content optimizer—usually pick one first.',
+    updated: '2026-08-12',
     relatedBlog: 'semrush-vs-surfer-seo',
     tools: [
       {
@@ -247,8 +247,8 @@ export const comparisons: Comparison[] = [
   {
     slug: 'frase-vs-surfer',
     title: 'Frase vs Surfer SEO',
-    subtitle: 'Briefs and speed vs deeper on-page optimization—which optimizer fits 2026 SEO teams?',
-    updated: '2026-08-05',
+    subtitle: 'Briefs and speed vs deeper on-page scoring—which optimizer fits your bottleneck?',
+    updated: '2026-08-12',
     relatedBlog: 'frase-vs-surfer-2026',
     tools: [
       {
