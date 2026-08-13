@@ -292,6 +292,53 @@ export const comparisons: Comparison[] = [
       'Choose Frase when briefing speed and coverage (and optionally AI-search visibility) are the bottleneck. Choose Surfer when drafts need deeper on-page optimization against competitive SERPs. Most teams should buy one first; add the second only after a clear weekly workflow gap appears. Budget path: Surfer alternatives; research-suite path: Semrush vs Surfer.',
   },
   {
+    slug: 'is-surfer-seo-worth-it',
+    title: 'Is Surfer SEO Worth It?',
+    subtitle: 'When the content-score editor earns the seat—and when Frase is the better first buy.',
+    updated: '2026-08-13',
+    relatedBlog: 'is-surfer-seo-worth-it-2026',
+    tools: [
+      {
+        name: 'Surfer SEO',
+        affiliateKey: 'surfer',
+        summary:
+          'Optimization-first content editor with a live SERP/content score. Worth the seat when writers already have briefs and the weekly bottleneck is competitive on-page coverage—not topic discovery.',
+        pricingNote:
+          'As of August 2026 (third-party scrapes of surferseo.com/pricing, Jul–Aug 2026; annual often ~17% off): Discovery ~$59/mo or ~$49/mo annual; Standard ~$119/~$99; Pro ~$219/~$182; Peace of Mind ~$359/~$299; Enterprise custom, often cited from ~$999/mo. New accounts often get a 7-day Pro trial. Meters (documents, tracked pages) change when plans rebundle—verify live; do not buy from a screenshot.',
+        bestFor: [
+          'Writers optimizing drafts against tough SERPs every week',
+          'Teams that already have briefs and need a shared content-score QA loop',
+          'Small teams ready to use Standard-band seats instead of leaving Discovery idle',
+        ],
+        skipIf: [
+          'Briefs and topic coverage are still the bottleneck (buy Frase first)',
+          'Publish volume is low and ChatGPT/Claude + GSC still covers the week',
+          'The editor would become shelfware, or research/audits are the real missing layer',
+        ],
+      },
+      {
+        name: 'Frase',
+        affiliateKey: 'frase',
+        summary:
+          'Research → brief → write → SEO/GEO loop. Often the better first optimizer when writers stall before drafting, or when you need to prove the category before a Surfer Standard/Pro seat.',
+        pricingNote:
+          'As of August 2026 (frase.io/pricing; annual often ~20% off): Starter ~$49/mo or ~$39/mo annual (1 seat; hard stop at limits, often cited ~10 articles/mo—verify live); Professional ~$129/~$103 (3 seats, optional overages); Scale ~$299/~$239; extra seats ~$29/mo on Pro/Scale. 7-day trial, no credit card commonly advertised. Self-serve plans share the full loop; volume and seats differ.',
+        bestFor: [
+          'Teams blocked on briefs, outlines, and SERP/topic coverage',
+          'Budget-sensitive first optimizer seat (Starter to prove weekly use)',
+          'Ops that also care about AI-answer / GEO-style visibility alongside classic SEO',
+        ],
+        skipIf: [
+          'Briefs are already excellent and you only need score-deep in-editor optimization',
+          'Nobody will maintain a briefing workflow weekly',
+          'You need a full keyword-research and site-audit suite instead of an optimizer',
+        ],
+      },
+    ],
+    verdict:
+      'Buy one optimizer first. Choose Surfer when the weekly bottleneck is in-editor SERP scoring on already-briefed drafts. Choose Frase when briefs/coverage (and optionally GEO/AI-search visibility) are the bottleneck—or when you need a cheaper first seat to prove the category. Choose neither yet if ChatGPT/Claude plus Search Console still covers a modest calendar. Do not stack Surfer and Frase on day one; add the second only after a single tool’s limits show up in throughput. Verify all prices live (August 2026 notes).',
+  },
+  {
     slug: 'ai-content-tools-for-agencies',
     title: 'AI Content Tools for Agencies',
     subtitle: 'Multi-client stacks for brand control, SEO QC, and research—without overlapping seat waste.',
