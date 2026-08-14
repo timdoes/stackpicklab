@@ -15,7 +15,9 @@ import { comparisons } from '../data/comparisons';
         Pick the right AI writing &amp; SEO stack—without the hype.
       </h1>
       <p class="mt-4 text-lg text-slate-600">
-        StackPick Lab compares tools like Jasper, Copy.ai, Surfer, and Semrush the way operators actually buy them:
+        StackPick Lab compares tools like Jasper, Copy.ai, Surfer,
+        <a href="/blog/frase-review" class="font-medium text-brand-600">Frase</a>,
+        and Semrush the way operators actually buy them:
         who they’re for, who should skip them, and when one subscription is enough.
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
@@ -35,7 +37,7 @@ import { comparisons } from '../data/comparisons';
       {
         comparisons.map((c) => (
           <ComparisonCard
-            href={`/compare/${c.slug}`}
+            href={`/blog/${c.relatedBlog}`}
             title={c.title}
             subtitle={c.subtitle}
             updated={c.updated}
