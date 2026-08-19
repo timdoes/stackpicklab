@@ -6,5 +6,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   site: 'https://stackpicklab.com',
   output: 'static',
-  integrations: [tailwind(), sitemap()],
+  integrations: [tailwind(), sitemap({ filter: (page) => !new URL(page).pathname.startsWith('/compare/') })],
 });

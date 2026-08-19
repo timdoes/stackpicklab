@@ -14,6 +14,8 @@ const {
   moneyPage = false,
 } = Astro.props;
 const fullTitle = title.includes('StackPick Lab') ? title : `${title} | StackPick Lab`;
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalHref = new URL(pathname, Astro.site ?? 'https://stackpicklab.com').href;
 ---
 <!doctype html>
 <html lang="en">
@@ -21,6 +23,7 @@ const fullTitle = title.includes('StackPick Lab') ? title : `${title} | StackPic
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalHref} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
